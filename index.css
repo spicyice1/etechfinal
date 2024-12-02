@@ -1,0 +1,268 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+
+.banner {
+    width: 100%;
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(48, 32, 32, 0.75), rgba(0, 0, 0, 0.75)), url('chemistry.gif');
+    background-size: cover;
+    background-position: center;
+}
+
+
+#active /*lagay nyo to sa current page sa navbar ex. home*/
+{
+    color:white;
+	text-decoration:none;
+    padding: 10px;
+    border-radius: 10px;
+	background-color:#d7182a;
+}
+
+.navbar {
+    width: 100%; 
+    margin: auto;
+    padding: 10px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(to bottom, rgba(128, 0, 0, 0.9), rgba(64, 0, 0, 0.5));
+}
+
+.logotext {
+    line-height: 1.4;
+    margin-left: -120px;
+    color: whitesmoke;
+    text-align: left;
+}
+
+.logotext div {
+    font-size: 20px;
+}
+
+.logo{
+    padding-left: 25px;
+}
+
+.navbar ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 18px;
+    position: relative;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
+
+.navbar ul li::after {
+    content: '';
+    height: 3px;
+    width: 0%;
+    background: #d7182a;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+
+.navbar ul li:hover::after {
+    width: 100%;
+}
+
+.main {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: left;
+    color: #fff;
+}
+
+.main h1 {
+    font-size: 45px;
+    margin: 60px 30px 0px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.main p {
+    margin: 10px 30px;
+    font-weight: 100;
+    line-height: 30px;
+    font-size: 15px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+button {
+    width: 100px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 30px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #d7182a;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+span {
+    background: #d7182a;
+    height: 100%;
+    width: 0%;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+button:hover span {
+    width: 100%;
+}
+
+button:hover {
+    border: none;
+}
+
+a:link {
+    color: #fff;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #fff;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+a:active {
+    color: #fff;
+    text-decoration: none;
+}
+
+.separator {
+    width: 100%;
+    height: 50px;
+    background: linear-gradient(to bottom, rgba(48, 32, 32, 0.75), rgba(240, 240, 240, 1)); /* Customize colors */
+}
+
+/*about page*/
+#walter {
+    width: 100%;
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(48, 32, 32, 0.75), rgba(0, 0, 0, 0.75)), url('walter.gif');
+    background-size: cover;
+    background-position: center;
+}
+
+.about {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: #fff;
+}
+
+/*MEMBERS PAGE BRO MEMBERS PAGE TO PRE AYOS MEMBERS PAGE TO OK*/
+.photo-frame {
+    width: 250px;
+    height: 320px;
+    background: #ffffff;
+    border-bottom-width: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+}
+
+.photo {
+    width: 200px;
+    height: 200px;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.caption {
+    margin-top: 10px;
+    font-size: 14px;
+    font-family:Helvetica;
+    text-align: center;
+    color: #333;
+    line-height: 1.5;
+    padding-bottom: 10px;
+}
+
+.caption div {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.headermembers {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: azure;
+    padding: 30px;
+    text-align: center;
+}
+.photo-frame-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px; 
+    row-gap: 40px;
+    max-width: 1200px;
+    width: 100%;
+}
+
+#joval{
+    background: url('members/joval.jpg') no-repeat center;
+    background-size: cover;
+}
+#dayag{
+    background: url('members/dayag.png') no-repeat center;
+    background-size: cover;
+}
+#insipido{
+    background: url('members/elly.png') no-repeat center;
+    background-size: cover;
+}
+#escueta{
+    background: url('members/marg.jpg') no-repeat center;
+    background-size: cover;
+}
+#jolnaniro{
+    background: url('members/lebron.png') no-repeat center;
+    background-size: cover;
+}
+#lagumbay{
+    background: url('members/mari.png') no-repeat center;
+    background-size: cover;
+}
+#bajo{
+    background: url('members/meow.png') no-repeat center;
+    background-size: cover;
+}
+#quidip{
+    background: url('members/cinn.jpg') no-repeat center;
+    background-size: cover;
+}
