@@ -313,7 +313,10 @@ a:active {
     margin-bottom: 10px;
 }
 
+.image-item:hover img {
+    filter: blur(0%) grayscale(0%);
+}
 .image-item:hover .overlay {
     opacity: 0;
-    filter: blur(0%) grayscale(0%);
+    
 }
