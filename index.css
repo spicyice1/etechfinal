@@ -286,7 +286,7 @@ a:active {
     height: 100%;
     object-fit: cover;
     transition: all 0.3s ease;
-    filter: grayscale(100%);
+    filter: blur(20px) grayscale(1);
 }
 
 .overlay {
@@ -314,7 +314,7 @@ a:active {
 }
 
 .image-item:hover img {
-    filter: blur(0%) grayscale(0%);
+    filter: blur(0px) grayscale(0);
 }
 .image-item:hover .overlay {
     opacity: 0;
