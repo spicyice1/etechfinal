@@ -32,19 +32,25 @@
     background: linear-gradient(to bottom, rgba(128, 0, 0, 0.9), rgba(64, 0, 0, 0.5));
 }
 
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Space between logo and text */
+}
+
+.logo {
+    width: 60px; /* Adjust as needed */
+    height: auto;
+}
+
 .logotext {
     line-height: 1.4;
-    margin-left: -120px;
     color: whitesmoke;
     text-align: left;
 }
 
 .logotext div {
     font-size: 20px;
-}
-
-.logo{
-    padding-left: 25px;
 }
 
 .navbar ul li {
