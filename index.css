@@ -324,6 +324,5 @@ a:active {
     filter: blur(0px) grayscale(0);
 }
 .image-item:hover .overlay {
-    opacity: 0;
-    
+    opacity: 0
 }
