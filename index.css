@@ -175,6 +175,10 @@ a:active {
     background-position: center;
 }
 
+#ptbg {
+    background: linear-gradient (rgba(48, 32, 32, 0.75), rgba(0, 0, 0, 0.75));
+}
+
 .about {
     width: 100%;
     position: absolute;
@@ -258,7 +262,7 @@ a:active {
     background-size: cover;
 }
 #jolnaniro{
-    background: url('members/lebron.png') no-repeat center;
+    background: url('members/king.png') no-repeat center;
     background-size: cover;
 }
 #lagumbay{
