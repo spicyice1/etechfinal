@@ -277,7 +277,7 @@ a:active {
     background: url('members/cinn.jpg') no-repeat center;
     background-size: cover;
 }
-#jolnaniro{
+#jolnaniro:hover{
     background: url('members/lebron.png') no-repeat center;
     background-size: cover;
 }
